@@ -952,3 +952,45 @@ h2 {
     width: 100%;
   }
 }
+
+/* --- Premium MAT system enhancements --- */
+:root {
+  --mat-red-50: #fff1f2;
+  --mat-red-100: #ffe3e5;
+  --mat-red-600: #d71920;
+  --mat-red-700: #ad1117;
+  --mat-gradient: linear-gradient(135deg, #e11b22, #a90f15);
+  --focus-ring: 0 0 0 3px rgba(215, 25, 32, 0.28);
+  --ease-standard: cubic-bezier(.22,.61,.36,1);
+}
+.topbar::after{content:"";display:block;height:2px;background:linear-gradient(90deg,transparent,var(--mat-red-600),transparent)}
+.brand-mark{background:var(--mat-gradient); box-shadow:0 8px 24px rgba(215,25,32,.32)}
+.nav-links a:hover,.ghost-link:hover{color:var(--mat-red-700)}
+.btn,.path-card,.curriculum-item,.faq-item{transition:all .22s var(--ease-standard)}
+.btn-primary{background:var(--mat-gradient)}
+.btn-primary:hover{background:linear-gradient(135deg,#b31319,#840c11)}
+.path-card:hover,.curriculum-item:hover{box-shadow:var(--shadow-soft); border-color:rgba(215,25,32,.35)}
+.faq-item.active{border-color:rgba(215,25,32,.38); background:linear-gradient(180deg,#fff,#fff8f8)}
+a:focus-visible,button:focus-visible,.path-card:focus-visible{outline:none; box-shadow:var(--focus-ring); border-radius:12px}
+section{position:relative}
+section+section::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(215,25,32,.18),transparent)}
+
+.sticky-cta{position:sticky; top:72px; z-index:45; background:rgba(255,255,255,.92); backdrop-filter:blur(12px); border-bottom:1px solid rgba(215,25,32,.16)}
+.sticky-cta-inner{min-height:56px; display:flex; align-items:center; justify-content:space-between; gap:12px}
+.sticky-label{font-size:12px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:#7a2629}
+
+body.nav-open{overflow:hidden}
+@media (max-width:1024px){
+  .nav{position:relative}
+  .nav-links{position:absolute;left:0;right:0;top:72px;background:#fff;border-bottom:1px solid var(--line);padding:12px 20px;flex-direction:column;align-items:flex-start;display:none}
+  .nav-open .nav-links{display:flex}
+}
+@media (max-width:720px){
+  .sticky-cta{top:66px}
+  .sticky-cta-inner{min-height:52px}
+  .sticky-label{display:none}
+}
+@media (prefers-reduced-motion: reduce){
+  *{scroll-behavior:auto!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
