@@ -22,21 +22,27 @@
           </div>
         </a>
 
-        <nav class="nav-links" aria-label="Primary navigation">
+        <nav class="nav-links" id="primary-menu" aria-label="Primary navigation">
           <a href="#what-is-mat">What Is MAT?</a>
           <a href="#professionals">For Professionals</a>
-          <a href="#session">Watch Session</a>
+          <a href="#session" data-cta="watch_session">Watch Session</a>
           <a href="#matpro">MATPro</a>
-          <a href="#find">Find Practitioner</a>
+          <a href="#find" data-cta="find_practitioner">Find Practitioner</a>
         </nav>
 
         <div class="nav-actions">
-          <a class="ghost-link" href="#find">Find Practitioner</a>
-          <a class="btn btn-primary" href="#apply">Apply <span class="arrow">→</span></a>
-          <button class="btn btn-secondary mobile-toggle" aria-label="Open menu">Menu</button>
+          <a class="ghost-link" href="#find" data-cta="find_practitioner">Find Practitioner</a>
+          <a class="btn btn-primary" href="#apply" data-cta="apply_matpro">Apply <span class="arrow">→</span></a>
+          <button class="btn btn-secondary mobile-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu">Menu</button>
         </div>
       </div>
     </header>
+    <div class="sticky-cta" data-sticky-cta>
+      <div class="container sticky-cta-inner">
+        <span class="sticky-label" data-cta-label>Professional path active</span>
+        <a class="btn btn-primary" href="#apply" data-cta="apply_matpro" data-cta-dynamic>Apply for MATPro <span class="arrow">→</span></a>
+      </div>
+    </div>
 
     <main>
       <section class="hero">
@@ -46,8 +52,8 @@
             <h1>You don’t need another technique. You need a better way to decide.</h1>
             <p class="hero-lede">Muscle Activation Techniques® is a systematic process for <strong>assessing, addressing, and verifying contractile capability</strong> — giving professionals a more precise way to evaluate muscular function and make better decisions with the body in front of them.</p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#apply">Apply for MATPro <span class="arrow">→</span></a>
-              <a class="btn btn-secondary" href="#session">Watch a MAT Session <span class="arrow">→</span></a>
+              <a class="btn btn-primary" href="#apply" data-cta="apply_matpro">Apply for MATPro <span class="arrow">→</span></a>
+              <a class="btn btn-secondary" href="#session" data-cta="watch_session">Watch a MAT Session <span class="arrow">→</span></a>
             </div>
             <p class="hero-note">Built for movement, therapy, rehab, fitness, and performance professionals ready to move beyond generic activation language.</p>
           </div>
@@ -215,8 +221,8 @@
               <p class="section-copy">MATPro is a professional education pathway for practitioners who want to understand the MAT system, build sharper clinical reasoning, and learn how to assess, address, and verify contractile capability.</p>
 
               <div class="hero-actions">
-                <a class="btn btn-primary" href="#apply">Apply for MATPro <span class="arrow">→</span></a>
-                <a class="btn btn-secondary" href="#session">Watch Session <span class="arrow">→</span></a>
+                <a class="btn btn-primary" href="#apply" data-cta="apply_matpro">Apply for MATPro <span class="arrow">→</span></a>
+                <a class="btn btn-secondary" href="#session" data-cta="watch_session">Watch Session <span class="arrow">→</span></a>
               </div>
 
               <div class="program-stats">
@@ -270,23 +276,23 @@
 
           <div class="faq-list reveal">
             <div class="faq-item active">
-              <button class="faq-question" type="button">Is MAT just muscle activation? <span class="faq-plus">−</span></button>
-              <div class="faq-answer">No. MAT is not a collection of activation drills. It is a systematic process for assessing, addressing, and verifying contractile capability.</div>
+              <button class="faq-question" type="button" aria-expanded="true" aria-controls="faq-a1" id="faq-q1">Is MAT just muscle activation? <span class="faq-plus">−</span></button>
+              <div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1">No. MAT is not a collection of activation drills. It is a systematic process for assessing, addressing, and verifying contractile capability.</div>
             </div>
 
             <div class="faq-item">
-              <button class="faq-question" type="button">Is this corrective exercise? <span class="faq-plus">+</span></button>
-              <div class="faq-answer">Corrective exercise often starts with movement strategy. MAT starts by asking whether the muscular system can demonstrate the contractile capability required to support movement.</div>
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">Is this corrective exercise? <span class="faq-plus">+</span></button>
+              <div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-q2">Corrective exercise often starts with movement strategy. MAT starts by asking whether the muscular system can demonstrate the contractile capability required to support movement.</div>
             </div>
 
             <div class="faq-item">
-              <button class="faq-question" type="button">Who is MATPro for? <span class="faq-plus">+</span></button>
-              <div class="faq-answer">MATPro is built for serious movement, therapy, rehab, fitness, and performance professionals who want a more precise decision-making framework.</div>
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">Who is MATPro for? <span class="faq-plus">+</span></button>
+              <div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-q3">MATPro is built for serious movement, therapy, rehab, fitness, and performance professionals who want a more precise decision-making framework.</div>
             </div>
 
             <div class="faq-item">
-              <button class="faq-question" type="button">Why is there an application process? <span class="faq-plus">+</span></button>
-              <div class="faq-answer">The education is a serious professional pathway. The call helps confirm fit, logistics, expectations, and readiness before enrollment.</div>
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">Why is there an application process? <span class="faq-plus">+</span></button>
+              <div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4">The education is a serious professional pathway. The call helps confirm fit, logistics, expectations, and readiness before enrollment.</div>
             </div>
           </div>
         </div>
@@ -299,8 +305,8 @@
           <p>MATPro is for professionals ready to understand MAT as a systematic framework for assessment, intervention, verification, and progression.</p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#">Apply to Become a Practitioner <span class="arrow">→</span></a>
-            <a class="btn btn-secondary" href="#session">Watch a MAT Session <span class="arrow">→</span></a>
+            <a class="btn btn-primary" href="#apply" data-cta="apply_matpro">Apply to Become a Practitioner <span class="arrow">→</span></a>
+            <a class="btn btn-secondary" href="#session" data-cta="watch_session">Watch a MAT Session <span class="arrow">→</span></a>
           </div>
         </div>
       </section>
